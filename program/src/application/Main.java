@@ -1,11 +1,13 @@
 package application;
 
 import entities.Contract;
+import entities.Installment;
 import services.ContractService;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Date;
+import java.util.List;
 import java.util.Scanner;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -24,9 +26,14 @@ public class Main {
         System.out.print("Enter with number of intallments: ");
         int numberOfInstallments = sc.nextInt();
 
-        Contract contractObj = new Contract(contractNumber, date, valueContract);
+        Contract contract = new Contract(contractNumber, date, valueContract);
         ContractService service = new ContractService();
-        service.processContract(contractObj, numberOfInstallments);
+        List<Installment> installmentList = service.processContract(contract, numberOfInstallments);
+
+        installmentList.forEach(installment-> {
+            System.out.println(installment.getAmount());
+        });
+
         sc.close();
     }
 }

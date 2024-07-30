@@ -1,21 +1,22 @@
 package entities;
 
+import java.time.LocalDateTime;
 import java.util.Date;
 
 public class Installment {
-    private Date date;
+    private LocalDateTime date;
     private Double amount;
 
-    public Installment(Date date, Double amount) {
+    public Installment(LocalDateTime date, Double amount) {
         this.date = date;
         this.amount = amount;
     }
 
-    public Date getDate() {
+    public LocalDateTime getDate() {
         return date;
     }
 
-    public void setDate(Date date) {
+    public void setDate(LocalDateTime date) {
         this.date = date;
     }
 
