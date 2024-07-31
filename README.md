@@ -5,6 +5,10 @@ This aplication, aim to excercise relationship between objects and to pratice in
 ## Features
 
 - ** At each installmente, is added 1% at tax, more added 2% of the total value installment.
+
+## Print
+
+- ** At each installmente, is added 1% at tax, more added 2% of the total value installment.
         
 ## Prerequisites
 
