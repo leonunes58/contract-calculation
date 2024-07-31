@@ -8,8 +8,11 @@ This aplication, aim to excercise relationship between objects and to pratice in
 
 ## Print
 
-- ** At each installmente, is added 1% at tax, more added 2% of the total value installment.
-        
+<div>
+      <img src="https://github.com/user-attachments/assets/1191e076-1419-4c5e-a94e-a292dd1f5ac5">
+
+</div>
+
 ## Prerequisites
 
 Before running the application, ensure you have the following installed:
